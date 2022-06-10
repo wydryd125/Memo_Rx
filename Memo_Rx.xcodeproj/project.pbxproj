@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F3F684F2853191400996C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F684E2853191400996C68 /* AppDelegate.swift */; };
 		4F3F68512853191400996C68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F68502853191400996C68 /* SceneDelegate.swift */; };
-		4F3F68532853191400996C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F68522853191400996C68 /* ViewController.swift */; };
 		4F3F68562853191400996C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F68542853191400996C68 /* Main.storyboard */; };
 		4F3F68592853191400996C68 /* Memo_Rx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F68572853191400996C68 /* Memo_Rx.xcdatamodeld */; };
 		4F3F685B2853191500996C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F685A2853191500996C68 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 		4F3F684B2853191400996C68 /* Memo_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3F684E2853191400996C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F3F68502853191400996C68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F3F68522853191400996C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F3F68552853191400996C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F3F68582853191400996C68 /* Memo_Rx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memo_Rx.xcdatamodel; sourceTree = "<group>"; };
 		4F3F685A2853191500996C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +59,43 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4F2CA45828531B9100D3E360 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F2CA45928531BA100D3E360 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F68542853191400996C68 /* Main.storyboard */,
+				4F3F685C2853191500996C68 /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4F2CA45A28531BAE00D3E360 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4F2CA45B28531BC600D3E360 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4F2CA45C28531BDD00D3E360 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		4F3F68422853191400996C68 = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +117,14 @@
 		4F3F684D2853191400996C68 /* Memo_Rx */ = {
 			isa = PBXGroup;
 			children = (
+				4F2CA45C28531BDD00D3E360 /* Scene */,
+				4F2CA45B28531BC600D3E360 /* Service */,
+				4F2CA45A28531BAE00D3E360 /* ViewModel */,
+				4F2CA45928531BA100D3E360 /* ViewController */,
+				4F2CA45828531B9100D3E360 /* Model */,
 				4F3F684E2853191400996C68 /* AppDelegate.swift */,
 				4F3F68502853191400996C68 /* SceneDelegate.swift */,
-				4F3F68522853191400996C68 /* ViewController.swift */,
-				4F3F68542853191400996C68 /* Main.storyboard */,
 				4F3F685A2853191500996C68 /* Assets.xcassets */,
-				4F3F685C2853191500996C68 /* LaunchScreen.storyboard */,
 				4F3F685F2853191500996C68 /* Info.plist */,
 				4F3F68572853191400996C68 /* Memo_Rx.xcdatamodeld */,
 			);
@@ -209,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F3F68532853191400996C68 /* ViewController.swift in Sources */,
 				4F3F684F2853191400996C68 /* AppDelegate.swift in Sources */,
 				4F3F68512853191400996C68 /* SceneDelegate.swift in Sources */,
 				4F3F68592853191400996C68 /* Memo_Rx.xcdatamodeld in Sources */,
