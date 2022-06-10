@@ -7,103 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F2E358C2851CF16003C31A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E358B2851CF16003C31A6 /* AppDelegate.swift */; };
-		4F2E358E2851CF16003C31A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E358D2851CF16003C31A6 /* SceneDelegate.swift */; };
-		4F2E35902851CF16003C31A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E358F2851CF16003C31A6 /* ViewController.swift */; };
-		4F2E35932851CF16003C31A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2E35912851CF16003C31A6 /* Main.storyboard */; };
-		4F2E35952851CF18003C31A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2E35942851CF18003C31A6 /* Assets.xcassets */; };
-		4F2E35982851CF18003C31A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2E35962851CF18003C31A6 /* LaunchScreen.storyboard */; };
-		B0E71A759D3D3248E8796AA9 /* Pods_Memo_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8213049D88272AE6573A5478 /* Pods_Memo_Rx.framework */; };
+		4F3F684F2853191400996C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F684E2853191400996C68 /* AppDelegate.swift */; };
+		4F3F68512853191400996C68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F68502853191400996C68 /* SceneDelegate.swift */; };
+		4F3F68532853191400996C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F68522853191400996C68 /* ViewController.swift */; };
+		4F3F68562853191400996C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F68542853191400996C68 /* Main.storyboard */; };
+		4F3F68592853191400996C68 /* Memo_Rx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F68572853191400996C68 /* Memo_Rx.xcdatamodeld */; };
+		4F3F685B2853191500996C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F685A2853191500996C68 /* Assets.xcassets */; };
+		4F3F685E2853191500996C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F685C2853191500996C68 /* LaunchScreen.storyboard */; };
+		867D1040C3215FC01F3A3D16 /* Pods_Memo_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3FCCC8688885E20463B606 /* Pods_Memo_Rx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F2E35882851CF16003C31A6 /* Memo_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F2E358B2851CF16003C31A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F2E358D2851CF16003C31A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F2E358F2851CF16003C31A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F2E35922851CF16003C31A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4F2E35942851CF18003C31A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4F2E35972851CF18003C31A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4F2E35992851CF18003C31A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8213049D88272AE6573A5478 /* Pods_Memo_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E2DC4883410781D5D6E10DA /* Pods-Memo_Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_Rx.release.xcconfig"; path = "Target Support Files/Pods-Memo_Rx/Pods-Memo_Rx.release.xcconfig"; sourceTree = "<group>"; };
-		CEBBBAB4497E54B991806438 /* Pods-Memo_Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_Rx.debug.xcconfig"; path = "Target Support Files/Pods-Memo_Rx/Pods-Memo_Rx.debug.xcconfig"; sourceTree = "<group>"; };
+		4F3F684B2853191400996C68 /* Memo_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3F684E2853191400996C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F3F68502853191400996C68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F3F68522853191400996C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F3F68552853191400996C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F3F68582853191400996C68 /* Memo_Rx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memo_Rx.xcdatamodel; sourceTree = "<group>"; };
+		4F3F685A2853191500996C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F3F685D2853191500996C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F3F685F2853191500996C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EEDDE15F1C13E578EBB584B /* Pods-Memo_Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_Rx.release.xcconfig"; path = "Target Support Files/Pods-Memo_Rx/Pods-Memo_Rx.release.xcconfig"; sourceTree = "<group>"; };
+		BF81C2711C6435DC8B90C8EC /* Pods-Memo_Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_Rx.debug.xcconfig"; path = "Target Support Files/Pods-Memo_Rx/Pods-Memo_Rx.debug.xcconfig"; sourceTree = "<group>"; };
+		DE3FCCC8688885E20463B606 /* Pods_Memo_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F2E35852851CF16003C31A6 /* Frameworks */ = {
+		4F3F68482853191400996C68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0E71A759D3D3248E8796AA9 /* Pods_Memo_Rx.framework in Frameworks */,
+				867D1040C3215FC01F3A3D16 /* Pods_Memo_Rx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F2E357F2851CF16003C31A6 = {
+		2B858BC37A59BCF809A25CE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4F2E358A2851CF16003C31A6 /* Memo_Rx */,
-				4F2E35892851CF16003C31A6 /* Products */,
-				8650F536858EACFD3BCBDAF5 /* Pods */,
-				B5F6350F85259139BEE0A60E /* Frameworks */,
+				DE3FCCC8688885E20463B606 /* Pods_Memo_Rx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		375FCAE634A613ACB9597DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF81C2711C6435DC8B90C8EC /* Pods-Memo_Rx.debug.xcconfig */,
+				5EEDDE15F1C13E578EBB584B /* Pods-Memo_Rx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4F3F68422853191400996C68 = {
+			isa = PBXGroup;
+			children = (
+				4F3F684D2853191400996C68 /* Memo_Rx */,
+				4F3F684C2853191400996C68 /* Products */,
+				375FCAE634A613ACB9597DB8 /* Pods */,
+				2B858BC37A59BCF809A25CE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4F2E35892851CF16003C31A6 /* Products */ = {
+		4F3F684C2853191400996C68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F2E35882851CF16003C31A6 /* Memo_Rx.app */,
+				4F3F684B2853191400996C68 /* Memo_Rx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4F2E358A2851CF16003C31A6 /* Memo_Rx */ = {
+		4F3F684D2853191400996C68 /* Memo_Rx */ = {
 			isa = PBXGroup;
 			children = (
-				4F2E358B2851CF16003C31A6 /* AppDelegate.swift */,
-				4F2E358D2851CF16003C31A6 /* SceneDelegate.swift */,
-				4F2E358F2851CF16003C31A6 /* ViewController.swift */,
-				4F2E35912851CF16003C31A6 /* Main.storyboard */,
-				4F2E35942851CF18003C31A6 /* Assets.xcassets */,
-				4F2E35962851CF18003C31A6 /* LaunchScreen.storyboard */,
-				4F2E35992851CF18003C31A6 /* Info.plist */,
+				4F3F684E2853191400996C68 /* AppDelegate.swift */,
+				4F3F68502853191400996C68 /* SceneDelegate.swift */,
+				4F3F68522853191400996C68 /* ViewController.swift */,
+				4F3F68542853191400996C68 /* Main.storyboard */,
+				4F3F685A2853191500996C68 /* Assets.xcassets */,
+				4F3F685C2853191500996C68 /* LaunchScreen.storyboard */,
+				4F3F685F2853191500996C68 /* Info.plist */,
+				4F3F68572853191400996C68 /* Memo_Rx.xcdatamodeld */,
 			);
 			path = Memo_Rx;
-			sourceTree = "<group>";
-		};
-		8650F536858EACFD3BCBDAF5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CEBBBAB4497E54B991806438 /* Pods-Memo_Rx.debug.xcconfig */,
-				9E2DC4883410781D5D6E10DA /* Pods-Memo_Rx.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		B5F6350F85259139BEE0A60E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8213049D88272AE6573A5478 /* Pods_Memo_Rx.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F2E35872851CF16003C31A6 /* Memo_Rx */ = {
+		4F3F684A2853191400996C68 /* Memo_Rx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2E359C2851CF18003C31A6 /* Build configuration list for PBXNativeTarget "Memo_Rx" */;
+			buildConfigurationList = 4F3F68622853191500996C68 /* Build configuration list for PBXNativeTarget "Memo_Rx" */;
 			buildPhases = (
-				258B9CE0C91DC21209646712 /* [CP] Check Pods Manifest.lock */,
-				4F2E35842851CF16003C31A6 /* Sources */,
-				4F2E35852851CF16003C31A6 /* Frameworks */,
-				4F2E35862851CF16003C31A6 /* Resources */,
-				4DE3BCD0D7F3AC3BCB25CC26 /* [CP] Embed Pods Frameworks */,
+				366F6F22822E05BC5249A4EE /* [CP] Check Pods Manifest.lock */,
+				4F3F68472853191400996C68 /* Sources */,
+				4F3F68482853191400996C68 /* Frameworks */,
+				4F3F68492853191400996C68 /* Resources */,
+				7D0B3EB818CA433B12A5D940 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,25 +113,25 @@
 			);
 			name = Memo_Rx;
 			productName = Memo_Rx;
-			productReference = 4F2E35882851CF16003C31A6 /* Memo_Rx.app */;
+			productReference = 4F3F684B2853191400996C68 /* Memo_Rx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4F2E35802851CF16003C31A6 /* Project object */ = {
+		4F3F68432853191400996C68 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					4F2E35872851CF16003C31A6 = {
+					4F3F684A2853191400996C68 = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
 			};
-			buildConfigurationList = 4F2E35832851CF16003C31A6 /* Build configuration list for PBXProject "Memo_Rx" */;
+			buildConfigurationList = 4F3F68462853191400996C68 /* Build configuration list for PBXProject "Memo_Rx" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,31 +139,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 4F2E357F2851CF16003C31A6;
-			productRefGroup = 4F2E35892851CF16003C31A6 /* Products */;
+			mainGroup = 4F3F68422853191400996C68;
+			productRefGroup = 4F3F684C2853191400996C68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F2E35872851CF16003C31A6 /* Memo_Rx */,
+				4F3F684A2853191400996C68 /* Memo_Rx */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4F2E35862851CF16003C31A6 /* Resources */ = {
+		4F3F68492853191400996C68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2E35982851CF18003C31A6 /* LaunchScreen.storyboard in Resources */,
-				4F2E35952851CF18003C31A6 /* Assets.xcassets in Resources */,
-				4F2E35932851CF16003C31A6 /* Main.storyboard in Resources */,
+				4F3F685E2853191500996C68 /* LaunchScreen.storyboard in Resources */,
+				4F3F685B2853191500996C68 /* Assets.xcassets in Resources */,
+				4F3F68562853191400996C68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		258B9CE0C91DC21209646712 /* [CP] Check Pods Manifest.lock */ = {
+		366F6F22822E05BC5249A4EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,7 +185,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4DE3BCD0D7F3AC3BCB25CC26 /* [CP] Embed Pods Frameworks */ = {
+		7D0B3EB818CA433B12A5D940 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,31 +205,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4F2E35842851CF16003C31A6 /* Sources */ = {
+		4F3F68472853191400996C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2E35902851CF16003C31A6 /* ViewController.swift in Sources */,
-				4F2E358C2851CF16003C31A6 /* AppDelegate.swift in Sources */,
-				4F2E358E2851CF16003C31A6 /* SceneDelegate.swift in Sources */,
+				4F3F68532853191400996C68 /* ViewController.swift in Sources */,
+				4F3F684F2853191400996C68 /* AppDelegate.swift in Sources */,
+				4F3F68512853191400996C68 /* SceneDelegate.swift in Sources */,
+				4F3F68592853191400996C68 /* Memo_Rx.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4F2E35912851CF16003C31A6 /* Main.storyboard */ = {
+		4F3F68542853191400996C68 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4F2E35922851CF16003C31A6 /* Base */,
+				4F3F68552853191400996C68 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4F2E35962851CF18003C31A6 /* LaunchScreen.storyboard */ = {
+		4F3F685C2853191500996C68 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4F2E35972851CF18003C31A6 /* Base */,
+				4F3F685D2853191500996C68 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -235,7 +238,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4F2E359A2851CF18003C31A6 /* Debug */ = {
+		4F3F68602853191500996C68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		4F2E359B2851CF18003C31A6 /* Release */ = {
+		4F3F68612853191500996C68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,14 +352,15 @@
 			};
 			name = Release;
 		};
-		4F2E359D2851CF18003C31A6 /* Debug */ = {
+		4F3F68632853191500996C68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEBBBAB4497E54B991806438 /* Pods-Memo_Rx.debug.xcconfig */;
+			baseConfigurationReference = BF81C2711C6435DC8B90C8EC /* Pods-Memo_Rx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLN97H98PA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Memo_Rx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -364,6 +368,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,14 +382,15 @@
 			};
 			name = Debug;
 		};
-		4F2E359E2851CF18003C31A6 /* Release */ = {
+		4F3F68642853191500996C68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E2DC4883410781D5D6E10DA /* Pods-Memo_Rx.release.xcconfig */;
+			baseConfigurationReference = 5EEDDE15F1C13E578EBB584B /* Pods-Memo_Rx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLN97H98PA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Memo_Rx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -392,6 +398,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,25 +415,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F2E35832851CF16003C31A6 /* Build configuration list for PBXProject "Memo_Rx" */ = {
+		4F3F68462853191400996C68 /* Build configuration list for PBXProject "Memo_Rx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2E359A2851CF18003C31A6 /* Debug */,
-				4F2E359B2851CF18003C31A6 /* Release */,
+				4F3F68602853191500996C68 /* Debug */,
+				4F3F68612853191500996C68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F2E359C2851CF18003C31A6 /* Build configuration list for PBXNativeTarget "Memo_Rx" */ = {
+		4F3F68622853191500996C68 /* Build configuration list for PBXNativeTarget "Memo_Rx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2E359D2851CF18003C31A6 /* Debug */,
-				4F2E359E2851CF18003C31A6 /* Release */,
+				4F3F68632853191500996C68 /* Debug */,
+				4F3F68642853191500996C68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F3F68572853191400996C68 /* Memo_Rx.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F3F68582853191400996C68 /* Memo_Rx.xcdatamodel */,
+			);
+			currentVersion = 4F3F68582853191400996C68 /* Memo_Rx.xcdatamodel */;
+			path = Memo_Rx.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 4F2E35802851CF16003C31A6 /* Project object */;
+	rootObject = 4F3F68432853191400996C68 /* Project object */;
 }

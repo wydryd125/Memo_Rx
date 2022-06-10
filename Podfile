@@ -7,9 +7,11 @@ target 'Memo_Rx' do
 
   # Pods for Memo_Rx
 
-  pod 'RxCocoa', '~> 6.5.0'
-  pod 'RxSwift', '~> 6.5.0'
-  
-  pod 'SnapKit', '~> 5.0.0'
-  
+pod 'RxSwift', "6.2.0"
+pod 'RxCocoa'
+pod 'Action'
+pod 'NSObject+Rx'
+pod 'RxDataSources'
+pod 'RxCoreData'
+
 end
