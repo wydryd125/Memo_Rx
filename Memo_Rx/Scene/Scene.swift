@@ -27,7 +27,9 @@ extension Scene {
         fatalError()
       }
       
-      listVC.bind(viewModel: memoListViewModel)
+      DispatchQueue.main.sync { //바인딩 시간을 늦춰야 네비게이션 타이틀 사이즈가 라지로 나옴
+        listVC.bind(viewModel: memoListViewModel)
+      }
       
       return nav
       
@@ -36,7 +38,9 @@ extension Scene {
         fatalError()
       }
       
-      detailVC.bind(viewModel: memoDetailViewModel)
+      DispatchQueue.main.sync {
+        detailVC.bind(viewModel: memoDetailViewModel)
+      }
       
       return detailVC
       
@@ -49,7 +53,9 @@ extension Scene {
         fatalError()
       }
       
-      composeVC.bind(viewModel: memoComposeViewModel)
+      DispatchQueue.main.async {
+        composeVC.bind(viewModel: memoComposeViewModel)
+      }
       
       return nav
       
