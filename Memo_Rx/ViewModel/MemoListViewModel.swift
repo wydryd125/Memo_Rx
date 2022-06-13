@@ -6,7 +6,11 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-class MemoListViewModel {
-  
+class MemoListViewModel: CommonViewMoel {
+  var memoList: Observable<[Memo]> {
+    return storage.memoList()
+  }
 }
