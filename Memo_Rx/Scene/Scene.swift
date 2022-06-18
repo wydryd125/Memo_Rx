@@ -27,7 +27,7 @@ extension Scene {
         fatalError()
       }
       
-      DispatchQueue.main.sync { //바인딩 시간을 늦춰야 네비게이션 타이틀 사이즈가 라지로 나옴
+      DispatchQueue.main.async { //바인딩 시간을 늦춰야 네비게이션 타이틀 사이즈가 라지로 나옴
         listVC.bind(viewModel: memoListViewModel)
       }
       
@@ -38,7 +38,7 @@ extension Scene {
         fatalError()
       }
       
-      DispatchQueue.main.sync {
+      DispatchQueue.main.async {
         detailVC.bind(viewModel: memoDetailViewModel)
       }
       
