@@ -32,7 +32,7 @@ class MemoListViewModel: CommonViewMoel {
     }
     
     func performUpdate(memo: Memo) -> Action<String, Void> {
-        //createButton을 눌렀을 때 바로 메모에 ""로 추가된다. 그래서 추가가 아닌 update 함수를 써야한다.
+        //createButton을 눌렀을 때 바로 메모에 임시료 ""로 추가된다. 그래서 추가가 아닌 update 함수를 써야한다.
         return Action { input in
             return self.storage.update(memo: memo, content: input).map { _ in }
         }
@@ -40,7 +40,7 @@ class MemoListViewModel: CommonViewMoel {
     
     func performCancel(memo: Memo) -> CocoaAction {
         return Action {
-            //createButton을 눌렀을 때 바로 메모에 ""로 추가된다. 그래서 삭제를 해야 추가된 메모가 사라진다.
+            //createButton을 눌렀을 때 바로 메모에 임시로 ""로 추가된다. 그래서 삭제를 해야 추가된 메모가 사라진다.
             return self.storage.delete(memo: memo).map { _ in}
         }
     }

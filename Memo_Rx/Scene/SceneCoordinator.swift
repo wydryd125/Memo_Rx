@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 
 extension UIViewController {
+    //실제로 화면에 표시되어 있는 vc를 return
     var sceneViewController: UIViewController {
         return self.children.last ?? self
     }
@@ -33,6 +34,7 @@ class SceneCoordinator: SceneCoordinatortype {
         
         switch style {
         case .root:
+            //sceneViewController가 return하는 vc를 currentVC에 저장
             currentVC = target.sceneViewController
             window.rootViewController = target
             
