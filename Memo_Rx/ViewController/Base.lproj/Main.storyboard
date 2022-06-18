@@ -119,10 +119,34 @@
                     <view key="view" contentMode="scaleToFill" id="5A8-1s-lan">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xng-ss-cmB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FDb-67-3kb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xng-ss-cmB" firstAttribute="top" secondItem="FDb-67-3kb" secondAttribute="top" id="EMx-Jg-lbI"/>
+                            <constraint firstItem="FDb-67-3kb" firstAttribute="trailing" secondItem="xng-ss-cmB" secondAttribute="trailing" id="WZ3-NZ-ryc"/>
+                            <constraint firstItem="xng-ss-cmB" firstAttribute="leading" secondItem="FDb-67-3kb" secondAttribute="leading" id="ls9-iO-uDi"/>
+                            <constraint firstItem="FDb-67-3kb" firstAttribute="bottom" secondItem="xng-ss-cmB" secondAttribute="bottom" id="usU-OO-zew"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="58d-UN-2ox"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="58d-UN-2ox">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7xV-ZL-A5s"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="tPr-n4-Xc7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="7xV-ZL-A5s" id="7Oo-JL-z69"/>
+                        <outlet property="contentTextView" destination="xng-ss-cmB" id="HRu-pG-cbA"/>
+                        <outlet property="saveButton" destination="tPr-n4-Xc7" id="SLB-Pd-uyh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7f-dK-PzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +172,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

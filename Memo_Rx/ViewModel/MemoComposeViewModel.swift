@@ -10,15 +10,16 @@ import RxSwift
 import RxCocoa
 import Action
 
+// 쓰기 화면에서 사용하는 뷰모델 구현
 class MemoComposeViewModel: CommonViewMoel {
     private let content: String?
     
-    var initialText: Driver<String?> {
+    var initialText: Driver<String?> { //view에 binding
         return Observable.just(content).asDriver(onErrorJustReturn: nil)
     }
     
-    let saveAction: Action<String, Void>
-    let cancelAction: CocoaAction
+    let saveAction: Action<String, Void> //저장
+    let cancelAction: CocoaAction //취소
     
     init(title: String, content: String? = nil, sceneCoordinator: SceneCoordinatortype, storage: MemoStorageType, saveAction: Action<String, Void>? = nil, cancelAction: CocoaAction? = nil) {
         self.content = content
