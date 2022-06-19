@@ -9,11 +9,32 @@ import Foundation
 import RxSwift
 import RxCocoa
 import Action
+import RxDataSources
+
+//RxDataSources가 제공하는 section medel
+typealias MemoSelectionModel = AnimatableSectionModel<Int, Memo>
 
 class MemoListViewModel: CommonViewMoel {
-  var memoList: Observable<[Memo]> {
+  var memoList: Observable<[MemoSelectionModel]> {
     return storage.memoList()
   }
+
+    // tableview binding에 사용할 dataSource 속성으로 선언
+    let dataSource: RxTableViewSectionedAnimatedDataSource<MemoSelectionModel> = {
+        let ds = RxTableViewSectionedAnimatedDataSource<MemoSelectionModel>(configureCell: { (dataSource, tableView, indexPath, memo) -> UITableViewCell in
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = memo.content
+            
+            return cell
+            
+        })
+        
+        ds.canEditRowAtIndexPath = { _, _ in return true }
+        
+        return ds
+        
+    }()
     
     func makeCreateAction() -> CocoaAction {
         return CocoaAction { _ in
@@ -53,6 +74,13 @@ class MemoListViewModel: CommonViewMoel {
             
             return self.sceneCoordinator.transition(to: detailScene, using: .push, animated: true)
                 .asObservable()
+                .map { _ in }
+        }
+    }()
+    
+    lazy var deleteAction: Action<Memo, Void> = {
+        return Action { memo in
+            return self.storage.delete(memo: memo)
                 .map { _ in }
         }
     }()
