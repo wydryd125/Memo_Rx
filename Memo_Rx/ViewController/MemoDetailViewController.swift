@@ -41,7 +41,19 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
           }
           .disposed(by: rx.disposeBag)
       
+      // 메모 수정 기능
       editButton.rx.action = viewModel.makeEditAction()
+      
+      // 메모 공유 기능
+      shareButton.rx.tap
+          .throttle(.microseconds(500), scheduler: MainScheduler.instance)
+          .withUnretained(self)
+          .subscribe(onNext: { (vc, _ ) in
+              let memo = vc.viewModel.memo.content
+              let activityVC = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+              vc.present(activityVC, animated: true, completion: nil)
+          })
+          .disposed(by: rx.disposeBag)
       
 //      var backButton = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
 //      viewModel.title
