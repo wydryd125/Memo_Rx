@@ -29,6 +29,7 @@
 		4FD6C02C285726890082463C /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C02B285726890082463C /* SceneCoordinator.swift */; };
 		4FD6C02E28572B5A0082463C /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C02D28572B5A0082463C /* CommonViewModel.swift */; };
 		867D1040C3215FC01F3A3D16 /* Pods_Memo_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3FCCC8688885E20463B606 /* Pods_Memo_Rx.framework */; };
+		DEE5DBA32861AB8500802650 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5DBA22861AB8500802650 /* CoreDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		5EEDDE15F1C13E578EBB584B /* Pods-Memo_Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_Rx.release.xcconfig"; path = "Target Support Files/Pods-Memo_Rx/Pods-Memo_Rx.release.xcconfig"; sourceTree = "<group>"; };
 		BF81C2711C6435DC8B90C8EC /* Pods-Memo_Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_Rx.debug.xcconfig"; path = "Target Support Files/Pods-Memo_Rx/Pods-Memo_Rx.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3FCCC8688885E20463B606 /* Pods_Memo_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE5DBA22861AB8500802650 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4F3F68572853191400996C68 /* Memo_Rx.xcdatamodeld */,
+				DEE5DBA22861AB8500802650 /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2CA464285321B100D3E360 /* MemoryStorage.swift in Sources */,
+				DEE5DBA32861AB8500802650 /* CoreDataStorage.swift in Sources */,
 				4F2CA47028533D2F00D3E360 /* MemoComposeViewModel.swift in Sources */,
 				4FD6C02C285726890082463C /* SceneCoordinator.swift in Sources */,
 				4FD6C028285721830082463C /* Scene.swift in Sources */,
