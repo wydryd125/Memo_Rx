@@ -11,7 +11,7 @@ import RxCocoa
 import Action
 
 class MemoDetailViewModel: CommonViewMoel {
-    let memo: Memo
+    var memo: Memo
     
     private var formmatter: DateFormatter = {
         let f = DateFormatter()
@@ -46,6 +46,9 @@ class MemoDetailViewModel: CommonViewMoel {
         return Action { input in
             //수정된 메모가 저장되면 바로 수정된 메모가 보이게 업데이트
              self.storage.update(memo: memo, content: input)
+            // coredata로 바꾸고 .do 추가
+            // 편집을 하여도 편집 전의 내용이 표시되는 문제 수정
+                .do(onNext: { self.memo = $0 } )
                 .map { [$0.content, self.formmatter.string(from: $0.insertDate)] }
                 .bind(onNext: { self.contents.onNext($0)} )
                 .disposed(by: self.rx.disposeBag)
