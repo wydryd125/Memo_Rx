@@ -40,6 +40,34 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
             .withLatestFrom(contentTextView.rx.text.orEmpty)
             .bind(to: viewModel.saveAction.inputs)
             .disposed(by: rx.disposeBag)
+        
+        
+        // 키보드 노출시 키보드가 뷰를 텍스트 뷰를 가리는 문제 수정
+        let willShowObservable = NotificationCenter.default.rx.notification(UIResponder.keyboardWillShowNotification)
+        //옵셔널을 자동으로 언래핑하기위해 compactMap 사용
+            .compactMap { $0.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue }
+            .map { $0.cgRectValue.height }
+        
+        let willHideObservable = NotificationCenter.default.rx.notification(UIResponder.keyboardWillHideNotification)
+            .map { noti -> CGFloat in 0 }
+        
+        let keyboardObserbable = Observable.merge(willShowObservable, willHideObservable)
+            .share()
+        
+        keyboardObserbable
+            .withUnretained(contentTextView)
+            .subscribe(onNext: { tv, height in
+                //텍스트 뷰 위치 수정
+                var inset = tv.contentInset
+                inset.bottom = height
+                tv.contentInset = inset
+                
+                //텍스트 뷰 스크롤 가능 추가
+                var scrollInset = tv.verticalScrollIndicatorInsets
+                scrollInset.bottom = height
+                tv.verticalScrollIndicatorInsets = scrollInset
+            })
+            .disposed(by: rx.disposeBag)
     }
     
     override func viewDidLoad() {
