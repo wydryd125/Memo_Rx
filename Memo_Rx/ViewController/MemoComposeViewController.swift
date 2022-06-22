@@ -55,19 +55,28 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
             .share()
         
         keyboardObserbable
-            .withUnretained(contentTextView)
-            .subscribe(onNext: { tv, height in
-                //텍스트 뷰 위치 수정
-                var inset = tv.contentInset
-                inset.bottom = height
-                tv.contentInset = inset
-                
-                //텍스트 뷰 스크롤 가능 추가
-                var scrollInset = tv.verticalScrollIndicatorInsets
-                scrollInset.bottom = height
-                tv.verticalScrollIndicatorInsets = scrollInset
-            })
+        // custom extension을 사용하여 toContentInset로 코드 개선, 간단하게 적용
+            .toContentInset(of: contentTextView)
+            .bind(to: contentTextView.rx.contentInset)
             .disposed(by: rx.disposeBag)
+
+        // 구독자로 높이가 아니라 하단 여백이 반영된 inset이 반영됨
+//            .map { tv, height -> UIEdgeInsets in
+//                var inset = tv.contentInset
+//                inset.bottom = height
+//                return inset
+//            }
+//            .subscribe(onNext: { tv, height in
+//                //텍스트 뷰 위치 수정
+//                var inset = tv.contentInset
+//                inset.bottom = height
+//                tv.contentInset = inset
+//
+//                //텍스트 뷰 스크롤 가능 추가
+//                var scrollInset = tv.verticalScrollIndicatorInsets
+//                scrollInset.bottom = height
+//                tv.verticalScrollIndicatorInsets = scrollInset
+//            })
     }
     
     override func viewDidLoad() {
@@ -89,3 +98,14 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
         }
     }
 }
+
+extension ObservableType where Element == CGFloat {
+    func toContentInset(of textView: UITextView) -> Observable<UIEdgeInsets> {
+        return map { height in
+            var inset = textView.contentInset
+            inset.bottom = height
+            return inset
+        }
+    }
+}
+
