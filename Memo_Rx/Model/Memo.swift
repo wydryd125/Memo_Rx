@@ -32,20 +32,20 @@ extension Memo: Persistable {
         return "Memo"
     }
     
-    static private var primaryAttributeName: String {
+    static var primaryAttributeName: String {
         return "identity"
     }
     
     init(entity: NSManagedObject) {
         content = entity.value(forKey: "content") as! String
-        insertDate = entity.value(forKey: "insertData") as! Date
+        insertDate = entity.value(forKey: "insertDate") as! Date
         identity = "\(insertDate.timeIntervalSinceReferenceDate)"
         
     }
     
     func update(_ entity: NSManagedObject) {
         entity.setValue(content, forKey: "content")
-        entity.setValue(insertDate, forKey: "insertData")
+        entity.setValue(insertDate, forKey: "insertDate")
         entity.setValue("\(insertDate.timeIntervalSinceReferenceDate)", forKey: "identity")
         
         do {
