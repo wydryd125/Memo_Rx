@@ -57,6 +57,7 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
         keyboardObserbable
         // custom extension을 사용하여 toContentInset로 코드 개선, 간단하게 적용
             .toContentInset(of: contentTextView)
+            .toScrollInset(of: contentTextView)
             .bind(to: contentTextView.rx.contentInset)
             .disposed(by: rx.disposeBag)
 
@@ -109,3 +110,12 @@ extension ObservableType where Element == CGFloat {
     }
 }
 
+extension ObservableType where Element == UIEdgeInsets {
+    func toScrollInset(of textView: UITextView) -> Observable<UIEdgeInsets> {
+        return map { _ in
+            var scrollInset = textView.verticalScrollIndicatorInsets
+            scrollInset.bottom = textView.contentSize.height
+            return scrollInset
+        }
+    }
+}
