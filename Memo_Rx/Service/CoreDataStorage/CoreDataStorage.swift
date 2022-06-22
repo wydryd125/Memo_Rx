@@ -15,7 +15,7 @@ import CoreData
 class CoreDataStorage: MemoStorageType {
     let modelName: String
     
-    init(modelName:String) {
+    init(modelName: String) {
         self.modelName = modelName
     }
     

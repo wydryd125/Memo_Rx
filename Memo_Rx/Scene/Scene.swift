@@ -45,7 +45,7 @@ extension Scene {
       return detailVC
       
     case .compose(let memoComposeViewModel):
-      guard let nav = storyboard.instantiateViewController(withIdentifier: "ComposeVC") as? UINavigationController else {
+      guard let nav = storyboard.instantiateViewController(withIdentifier: "ComposeNav") as? UINavigationController else {
         fatalError()
       }
       

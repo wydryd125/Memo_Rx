@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       guard let _ = (scene as? UIWindowScene) else { return }
     
       //coreData 사용을 위해 수정, dummy data 사라지고 일반 메모 처럼 사용할 수 있다.
-    let storage = CoreDataStorage(modelName: "RxMemo") //MemoryStorage()
+    let storage = CoreDataStorage(modelName: "Memo_Rx") //MemoryStorage()
     let coordinator = SceneCoordinator(window: window!)
     let listViewModel = MemoListViewModel(title: "나의 메모", sceneCoordinator: coordinator, storage: storage)
     let listScene = Scene.list(listViewModel)
