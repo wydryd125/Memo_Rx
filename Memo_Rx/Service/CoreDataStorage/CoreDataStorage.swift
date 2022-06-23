@@ -10,8 +10,11 @@ import RxSwift
 import RxCoreData
 import CoreData
 
-//memoryStorage를 CoreDataStorage로 체인지
-//memoryStorage 채용하여 사용하고 SceneDelegate에서 CoreDataStorage로 의존성 수정함.
+/*
+ memoryStorage를 CoreDataStorage로 체인지
+ memoryStorage 채용하여 사용하고 SceneDelegate에서 CoreDataStorage로 의존성 수정함.
+ */
+
 class CoreDataStorage: MemoStorageType {
     let modelName: String
     

@@ -8,6 +8,10 @@
 import Foundation
 import RxSwift
 
+/*
+ 배열에 메모를 저장하는 메모리 저장소
+ */
+
 class MemoryStorage: MemoStorageType {
     private var list = [
         Memo(content: "Hello, RxSwift", insertData: Date().addingTimeInterval(-10)),
@@ -42,6 +46,7 @@ class MemoryStorage: MemoStorageType {
             sectionModel.items.insert(updated, at: index)
         }
         
+        //내부에 있는 베열을 변경한 다음 새로운 next 이벤트를 방출(=새로운 배열 방출). tableView가 update
         store.onNext([sectionModel])
         
         return Observable.just(updated)

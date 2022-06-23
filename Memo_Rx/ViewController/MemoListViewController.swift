@@ -14,6 +14,7 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var addButton: UIBarButtonItem!
     
+    // ViewModelBindableType를 채용하여 사용 가능, 제네릭 프로토콜로 선언되었기 때문에 model type은 VC마다 다르다.
     var viewModel: MemoListViewModel!
     
     func bindViewModel() {
