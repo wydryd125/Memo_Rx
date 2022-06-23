@@ -18,10 +18,12 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
     var viewModel: MemoListViewModel!
     
     func bindViewModel() {
+        //title과 navigationItem을 binding
         viewModel.title
             .drive(navigationItem.rx.title)
             .disposed(by: rx.disposeBag)
         
+        // 메모 목록을 방출하는 obserbable과 tableview를 binding
         viewModel.memoList
         //rxDataSource사용
             .bind(to: listTableView.rx.items(dataSource: viewModel.dataSource))

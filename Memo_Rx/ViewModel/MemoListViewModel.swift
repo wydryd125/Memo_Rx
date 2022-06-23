@@ -11,7 +11,9 @@ import RxCocoa
 import Action
 import RxDataSources
 
-//RxDataSources가 제공하는 section medel
+/*
+ RxDataSources가 제공하는 section model
+ */
 typealias MemoSelectionModel = AnimatableSectionModel<Int, Memo>
 
 class MemoListViewModel: CommonViewMoel {

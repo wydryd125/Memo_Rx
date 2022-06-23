@@ -9,6 +9,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+/*
+ 화면 전환 처리
+ */
+
 extension UIViewController {
     //실제로 화면에 표시되어 있는 vc를 return
     var sceneViewController: UIViewController {
@@ -28,9 +32,9 @@ class SceneCoordinator: SceneCoordinatortype {
     
     @discardableResult
     func transition(to scene: Scene, using style: TransitionStyle, animated: Bool) -> Completable {
-        let subject = PublishSubject<Never>() // 성공과 실패만 방출
+        let subject = PublishSubject<Never>() // 화면 전환의 성공과 실패만 방출
         
-        let target = scene.instantiat()
+        let target = scene.instantiat() // 실제로 scene을 만듦
         
         switch style {
         case .root:
@@ -52,7 +56,7 @@ class SceneCoordinator: SceneCoordinatortype {
                 .subscribe(onNext: { (coordinator, evt) in
                     coordinator.currentVC = evt.viewController.sceneViewController })
                 .disposed(by: bag)
-        
+            
             nav.pushViewController(target, animated: animated)
             currentVC = target.sceneViewController
             
@@ -65,10 +69,14 @@ class SceneCoordinator: SceneCoordinatortype {
             currentVC = target.sceneViewController
             
         }
+        
+        //Completable를 return해야 하기 때문에 asCompletable 추가
         return subject.asCompletable()
         
     }
     
+    // transition는 asCompletable를 사용하여 Completable로 변환
+    // close는 Completable를 직접 구현
     @discardableResult
     func close(animated: Bool) -> Completable {
         return Completable.create { [unowned self] completable in
