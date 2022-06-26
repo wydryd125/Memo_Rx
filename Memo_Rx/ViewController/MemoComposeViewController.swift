@@ -24,6 +24,7 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
             .drive(navigationItem.rx.title)
             .disposed(by: rx.disposeBag)
         
+        //binding하면 메모 쓰기 모드에서 빈 문자열, 편집할 모드에서는 편집 메모가 표시
         viewModel.initialText
             .drive(contentTextView.rx.text)
             .disposed(by: rx.disposeBag)
@@ -94,6 +95,7 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        //firstResponder 해제
         if contentTextView.isFirstResponder {
             contentTextView.resignFirstResponder()
         }
